@@ -113,6 +113,6 @@ updateButtonHover();
 updateButtonEvents();
 
 function retornar() {
-    window.location.href = "paginaInicial.html"; 
+    window.location.href = "index.html"; 
 }
 

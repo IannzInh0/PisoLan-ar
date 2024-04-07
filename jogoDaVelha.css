@@ -60,8 +60,33 @@ li {
 a {
     color: #fff;
     text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+#velha{
+    width: 30px;
+    height: 30px;
+}
+
+#forca{
+    width: 30px;
+    height: 30px;
+}
+
+#memoria{
+    width: 30px;
+    height: 30px;
+}
+
+#games-list li img {
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+#games-list li img:hover {
+    transform: scale(1.1); 
 }
