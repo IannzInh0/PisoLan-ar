@@ -1,2 +1,0 @@
-# SiteDeJogos
-site de jogos
