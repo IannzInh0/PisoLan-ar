@@ -372,3 +372,84 @@ form input[type="submit"]:hover {
     border-radius: 8px;
 }
 
+.servico img {
+    width: 110%;
+    height: 200px; /* Define a altura fixa */
+    object-fit: cover; /* Garante que a imagem preencha o container sem distorcer */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.projeto img {
+    width: 107%;
+    height: 220px; /* Define a altura fixa */
+    object-fit: cover; /* Garante que a imagem preencha o container sem distorcer */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Estilos do modal */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.right-arrow {
+    right: 20px;
+    border-radius: 3px 0 0 3px;
+}
+
+.left-arrow {
+    left: 20px;
+    border-radius: 3px 0 0 3px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
