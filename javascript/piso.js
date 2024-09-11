@@ -230,3 +230,49 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Variáveis globais para armazenar as imagens e o índice atual
+let modal = document.getElementById("modal");
+let modalImg = document.getElementById("modal-img");
+let images = document.querySelectorAll(".servico-img");
+let currentIndex;
+
+// Função para abrir o modal
+function openModal(index) {
+    modal.style.display = "block";
+    modalImg.src = images[index].src;
+    currentIndex = index;
+}
+
+// Função para fechar o modal
+function closeModal() {
+    modal.style.display = "none";
+}
+
+// Função para mostrar a próxima imagem
+function showNext() {
+    currentIndex = (currentIndex + 1) % images.length;
+    modalImg.src = images[currentIndex].src;
+}
+
+// Função para mostrar a imagem anterior
+function showPrev() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    modalImg.src = images[currentIndex].src;
+}
+
+// Adicionar os eventos de clique nas imagens
+images.forEach((img, index) => {
+    img.addEventListener("click", () => openModal(index));
+});
+
+// Fechar o modal ao clicar no "X"
+document.querySelector(".close").addEventListener("click", closeModal);
+
+// Navegação pelas setas
+document.getElementById("next").addEventListener("click", showNext);
+document.getElementById("prev").addEventListener("click", showPrev);
+
+// Fechar o modal ao clicar fora da imagem
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+});
