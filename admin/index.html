@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saj Pisos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/netlify-cms/2.10.8/netlify-cms.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/piso.css">
+</head>
+<body>
+    <header>
+        <div id="logoContainer">
+            <img id="logoEmpresa" src="imagens/logo.png" alt="logo da empresa">
+        </div>
+        <nav>
+            <ul>
+                <li class="navegacoes"><a href="#servicos">Serviços</a></li>
+                <li class="navegacoes"><a href="#projetos">Projetos</a></li>
+                <li class="navegacoes"><a href="#produtos">Produtos</a></li>
+                <li class="navegacoes"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="servicos">
+        <h2>Serviços Oferecidos</h2>
+        <div class="servicos-container">
+            <div class="servico">
+                <img src="imagens/essa.jpg" class="servico-img" alt="Serviço 1">
+                <h3>Instalação de Pisos</h3>
+                <p>Nossa equipe especializada oferece instalação profissional de pisos de concreto para diversas aplicações, garantindo durabilidade e acabamento perfeito.</p>
+            </div>
+            <div class="servico">
+                <img src="imagens/nova.jpg" class="servico-img" alt="Serviço 2">
+                <h3>Polimento de Pisos</h3>
+                <p>Transformamos superfícies de concreto opacas em pisos lisos e brilhantes, realçando a beleza natural do material e aumentando sua resistência.</p>
+            </div>
+            <div class="servico">
+                <img src="imagens/restauração.jpg" class="servico-img" alt="Serviço 3">
+                <h3>Restauração de Pisos</h3>
+                <p>Recuperamos pisos de concreto desgastados, removendo imperfeições e aplicando tratamentos que restauram a aparência original e prolongam a vida útil.</p>
+            </div>
+            <div class="servico">
+                <img src="imagens/potencial2.jpg" class="servico-img" alt="Serviço 4">
+                <h3>Consultoria de Design</h3>
+                <p>Nossos especialistas em design ajudam a escolher o melhor tipo de piso de concreto e acabamento para o seu projeto, unindo estética e funcionalidade.</p>
+            </div>
+            <div id="modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modal-img">
+                <div class="arrow left-arrow" id="prev">&lt;</div>
+                <div class="arrow right-arrow" id="next">&gt;</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="view-options">
+            <button id="viewFotos" class="active">Fotos</button>
+            <button id="viewVideos">Vídeos</button>
+        </div>
+    
+        <div id="fotosContainer" class="projetos-container">
+            <div class="projeto">
+                <img src="imagens/quadra-itatim.jpg" alt="" class="clickable">
+            </div>
+            <div class="projeto">
+                <img src="imagens/piso1.jpg" alt="" class="clickable">
+            </div>
+            <div class="projeto">
+                <img src="imagens/piso4.jpg" alt="" class="clickable">
+                <p></p>
+            </div>
+            <div class="projeto">
+                <img src="imagens/piso3.jpg" alt="" class="clickable">
+                <p></p>
+            </div>
+            <div class="projeto">
+                <img src="imagens/piso5.jpg" alt="" class="clickable">
+                <p></p>
+            </div>
+            <div class="projeto">
+                <img src="imagens/piso6.jpg" alt="" class="clickable">
+                <p></p>
+            </div>
+            <div class="projeto">
+                <img src="imagens/piso7.jpg" alt="" class="clickable">
+                <p></p>
+            </div>
+            <div class="projeto">
+                <img src="imagens/piso8.jpg" alt="" class="clickable">
+                <p></p>
+            </div>
+        </div>
+    
+        <div id="videosContainer" class="projetos-container" style="display: none;">
+            <div class="projeto">
+                <video src="videos/video1.mp4" class="clickable-video"></video>
+            </div>
+            <div class="projeto">
+                <video src="videos/video2.mp4" class="clickable-video"></video>
+            </div>
+            <div class="projeto">
+                <video src="videos/video3.mp4" class="clickable-video"></video>
+            </div>
+            <div class="projeto">
+                <video src="videos/video4.mp4" class="clickable-video"></video>
+            </div>
+            <div class="projeto">
+                <video src="videos/video5.mp4" class="clickable-video"></video>
+            </div>
+            <div class="projeto">
+                <video src="videos/video6.mp4" class="clickable-video"></video>
+            </div>
+            <div class="projeto">
+                <video src="videos/video7.mp4" class="clickable-video"></video>
+            </div>
+            <div class="projeto">
+                <video src="videos/video8.mp4" class="clickable-video"></video>
+            </div>
+            <div class="projeto">
+                <video src="videos/video9.mp4" class="clickable-video"></video>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    <section id="processo">
+        <h2>Processo de Trabalho</h2>
+        <div class="view-options">
+            <button id="viewFotosProcesso" class="active">Fotos</button>
+            <button id="viewVideosProcesso">Vídeos</button>
+        </div>
+    
+        <div id="fotosProcessoContainer" class="processo-container">
+            <h3>Construção de Quadra</h3>
+            <div class="processo-item">
+                <img src="inicio.jpg" alt="Início da construção da quadra" class="clickable-processo">
+            </div>
+            <div class="processo-item">
+                <img src="preparação.jpg" alt="Início da construção da quadra" class="clickable-processo">
+            </div>
+            <div class="processo-item">
+                <img src="concreto.jpg" alt="Início da construção da quadra" class="clickable-processo">
+            </div>
+            <div class="processo-item">
+                <img src="polimento.jpg" alt="Início da construção da quadra" class="clickable-processo">
+            </div>
+            <div class="processo-item">
+                <img src="resultado final.jpg" alt="Início da construção da quadra" class="clickable-processo">
+            </div>
+            
+            <h3>Construção de Escola</h3>
+            <div class="processo-item">
+                <img src="inicio.jpg" alt="Início da construção da escola" class="clickable-processo">
+            </div>
+            <div class="processo-item">
+                <img src="preparação.jpg" alt="Início da construção da escola" class="clickable-processo">
+            </div>
+            <div class="processo-item">
+                <img src="concreto.jpg" alt="Início da construção da escola" class="clickable-processo">
+            </div>
+            <div class="processo-item">
+                <img src="polimento.jpg" alt="Início da construção da escola" class="clickable-processo">
+            </div>
+            <div class="processo-item">
+                <img src="resultado final.jpg" alt="Início da construção da escola" class="clickable-processo">
+            </div>
+        </div>
+    
+        <div id="videosProcessoContainer" class="processo-container" style="display: none;">
+            <h3>Construção de Quadra</h3>
+            <div class="processo-item">
+                <video src="video-processo-quadra.mp4" class="clickable-processo-video"></video>
+            </div>
+            
+            <h3>Construção de Escola</h3>
+            <div class="processo-item">
+                <video src="video-processo-escola.mp4" class="clickable-processo-video"></video>
+            </div>
+        </div>
+    </section> -->
+    
+    
+    <footer>
+        <p>&copy; 2024 Saj Pisos</p>
+        <p>Telefone: (55) 7599577304</p>
+        <p>Email: sajpisos@gmail.com</p>
+    </footer>
+
+    <a href="https://wa.me/557599577304" class="whatsapp-float" target="_blank">
+        <img src="imagens/WhatsApp_icon.png.webp" alt="WhatsApp">
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/netlify-cms/2.10.8/netlify-cms.js"></script>
+    <script src="javascript/piso.js"></script>
+</body>
+</html>
