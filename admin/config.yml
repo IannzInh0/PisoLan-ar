@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: IannzInh0/PisoLan-ar  # Nome do seu repositório
+  branch: main  # Branch padrão
+
+media_folder: "piso/imagens"  # Pasta onde as imagens serão armazenadas
+public_folder: "/imagens"  # Caminho público das imagens
+
+collections:
+  - name: "site"  # Nome da coleção
+    label: "Site"  # Rótulo da coleção
+    folder: "piso"  # Pasta onde os arquivos de páginas estão
+    create: true  # Permitir a criação de novos arquivos
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Texto", name: "text", widget: "text" }
+      - { label: "Imagem", name: "image", widget: "image" }
